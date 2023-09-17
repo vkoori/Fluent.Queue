@@ -17,9 +17,9 @@
     <Company>-</Company>
     <Desciprtion>The Fluent Queue component provides a unified API across a variety of different queue services for the dotnet framework.</Desciprtion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>RabbitMQ, Queue, Rabbit, pub/sub, Kafka, Redis</PackageTags>
-    <RepositoryUrl></RepositoryUrl>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageTags>RabbitMQ, Queue, Rabbit, pub/sub, Kafka, Redis, dotnet, c#</PackageTags>
+    <RepositoryUrl>https://github.com/vkoori/Fluent.Queue.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/vkoori/Fluent.Queue.git</PackageProjectUrl>
     <ReleaseNotes>Added RabbitMQ dirver</ReleaseNotes>
     <Copyright>Copyright (c) Koorosh SafeAshrafi 2023</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
