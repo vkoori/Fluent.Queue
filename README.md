@@ -70,7 +70,7 @@ public class TestProperties : IMessageProperties
 public class TestExchange : IExchange
 {
     public string Name { get; set; } = "test";
-    public string Type { get; set; } = "direct";
+    public string Type { get; set; } = "x-delayed-message";
 }
 
 public class TestMessage : MessageBase, IRabbitMqMessage
@@ -85,6 +85,24 @@ public class TestMessage : MessageBase, IRabbitMqMessage
     public string? RoutingKey { get; set; }
 }
 
+```
+
+> Queues must be inherit of `FluentQueue.Interfaces.Queue.IQueue`
+
+```c#
+public abstract class RabbitMqQueueBase : IRabbitMqQueue
+{
+    public abstract string QueueName { get; set; }
+    public bool Durable { get; set; } = true;
+    public bool Exclusive { get; set; } = false;
+    public bool AutoDelete { get; set; } = false;
+    public IDictionary<string, object>? Arguments { get; set; } = new Dictionary<string, object>();
+}
+
+public class TestQueue : RabbitMqQueueBase
+{
+    public override string QueueName { get; set; } = "test-queue";
+}
 ```
 
 > The use of `OnQueue`, `OnConnection` and `OnDelay` is optional.

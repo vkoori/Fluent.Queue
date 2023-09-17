@@ -65,7 +65,8 @@ public static class RabbitMqChannel
     {
         channel.ExchangeDeclare(
             exchange: exchange.Name,
-            type: exchange.Type
+            type: exchange.Type,
+            durable: true
         );
     }
 

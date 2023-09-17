@@ -96,7 +96,7 @@ public class RabbitMqProducer : ProducerAbstract<IConnection, IRabbitMqMessage>
             }
             if (availableAt != null)
             {
-                headers["x-delay"] = ((TimeSpan)(availableAt - DateTime.Now)).TotalMilliseconds;
+                headers["x-delay"] = Convert.ToInt32(((TimeSpan)(availableAt - DateTime.Now)).TotalMilliseconds);
             }
         }
 
