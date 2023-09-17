@@ -111,6 +111,12 @@ public class TestQueue : RabbitMqQueueBase
 > 
 > If you don't send `OnQueue`, the package will generate a default queue.
 
+> Warning ⚠️
+> 
+> For using delay message in RabbitMQ driver, must be use rabbitmq_delayed_message_exchange plugin
+> 
+> [reference](https://blog.rabbitmq.com/posts/2015/04/scheduling-messages-with-rabbitmq/)
+
 ```c#
 _bus.Message(
     message: new TestMessage(
