@@ -5,7 +5,7 @@ The Fluent Queue component provides a unified API across a variety of different 
 ## How can Install Fluent Queue?
 
 ```sh
-dotnet add package Fluent.Queue --version 1.0.0
+dotnet add package Fluent.Queue --version 1.0.1
 ```
 
 ## How can use Fluent Queue?
