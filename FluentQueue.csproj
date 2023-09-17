@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
+    <PackageId>Fluent.Queue</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Koorosh SafeAshrafi</Authors>
+    <Company>-</Company>
+    <Desciprtion>The Fluent Queue component provides a unified API across a variety of different queue services for the dotnet framework.</Desciprtion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>RabbitMQ, Queue, Rabbit, pub/sub, Kafka, Redis</PackageTags>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <ReleaseNotes>Added RabbitMQ dirver</ReleaseNotes>
+    <Copyright>Copyright (c) Koorosh SafeAshrafi 2023</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
