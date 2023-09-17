@@ -10,9 +10,10 @@
     <TargetFramework>net7.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>Fluent.Queue</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Koorosh SafeAshrafi</Authors>
     <Company>-</Company>
     <Description>The Fluent Queue component provides a unified API across a variety of different queue services for the dotnet framework.</Description>
@@ -20,7 +21,7 @@
     <PackageTags>RabbitMQ, Queue, Rabbit, pub/sub, Kafka, Redis, dotnet, c#</PackageTags>
     <RepositoryUrl>https://github.com/vkoori/Fluent.Queue.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/vkoori/Fluent.Queue.git</PackageProjectUrl>
-    <ReleaseNotes>Added RabbitMQ dirver</ReleaseNotes>
+    <ReleaseNotes>Added RabbitMQ dirver. And generate package</ReleaseNotes>
     <Copyright>Copyright (c) Koorosh SafeAshrafi 2023</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
