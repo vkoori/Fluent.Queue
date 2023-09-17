@@ -12,7 +12,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>Fluent.Queue</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Koorosh SafeAshrafi</Authors>
     <Company>-</Company>
     <Description>The Fluent Queue component provides a unified API across a variety of different queue services for the dotnet framework.</Description>
