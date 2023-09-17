@@ -5,7 +5,7 @@ The Fluent Queue component provides a unified API across a variety of different 
 ## How can Install Fluent Queue?
 
 ```sh
-dotnet add package Fluent.Queue --version 1.0.4
+dotnet add package Fluent.Queue --version 1.0.6
 ```
 
 ## How can use Fluent Queue?
@@ -73,7 +73,7 @@ public class TestExchange : IExchange
     public string Type { get; set; } = "x-delayed-message";
     public bool Durable { get; set; } = true;
     public bool AutoDelete { get; set; } = false;
-    public IDictionary<string, object>? Arguments { get; set; } = new Dictionary<string, object>{{"x-delayed-type", "direct" }}
+    public IDictionary<string, object>? Arguments { get; set; } = new Dictionary<string, object>{{"x-delayed-type", "direct" }};
 }
 
 public class TestMessage : MessageBase, IRabbitMqMessage
