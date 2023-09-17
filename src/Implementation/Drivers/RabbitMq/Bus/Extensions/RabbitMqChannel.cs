@@ -66,7 +66,9 @@ public static class RabbitMqChannel
         channel.ExchangeDeclare(
             exchange: exchange.Name,
             type: exchange.Type,
-            durable: true
+            durable: exchange.Durable,
+            autoDelete: exchange.AutoDelete,
+            arguments: exchange.Arguments
         );
     }
 
