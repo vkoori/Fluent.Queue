@@ -175,12 +175,12 @@ public class TestJob : IInvocableJob<TestMessageBody>
 
 ## How to add custom driver to Fluent Queue?
 
-Custom driver registration has three steps:
+Custom driver registration has four steps:
 
 1. Create a dto of connection parameters. With the help of inheritance from `FluentQueue.Implementation.Connection.BaseBusConnectionDtoAbstract`.
-1. Create a connection. With the help of inheritance from `FluentQueue.Implementation.Connection.ConnectionBuilderAbstract<TConnection, TConnectionDto>`.
-2. Create a producer. With the help of inheritance from `FluentQueue.Implementation.Bus.ProducerAbstract<TConnection, TMessage>`.
-3. Create a consumer. With the help of inheritance from `FluentQueue.Implementation.Bus.SubscriberAbstract<TConnection>`.
+2. Create a connection. With the help of inheritance from `FluentQueue.Implementation.Connection.ConnectionBuilderAbstract<TConnection, TConnectionDto>`.
+3. Create a producer. With the help of inheritance from `FluentQueue.Implementation.Bus.ProducerAbstract<TConnection, TMessage>`.
+4. Create a consumer. With the help of inheritance from `FluentQueue.Implementation.Bus.SubscriberAbstract<TConnection>`.
 
 > Note ⚠️
 > 
